@@ -6,7 +6,7 @@ info:
   contact:
     name: "naim"
 servers:
-  - url: http://localhost:8080
+  - url: https://6aft3bvup7.execute-api.us-east-1.amazonaws.com/dev
 paths:
   /:
     get:

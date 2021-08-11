@@ -1,3 +1,3 @@
-module.exports.helloWorld = (req, res, next) => {
+module.exports.helloWorld = (req, res) => {
     res.json({ title: 'Express' });
 }

@@ -3,31 +3,24 @@
     "version": "0.0.0",
     "private": true,
     "scripts": {
-        "start": "node ./bin/www",
-        "dev": "node ./bin/www",
+        "start": "sls deploy",
+        "dev": "sls offline start --skipCacheInvalidation",
         "test": "mocha"
     },
     "dependencies": {
+        "aws-sdk": "^2.965.0",
         "body-parser": "^1.19.0",
-        "cookie-parser": "~1.4.4",
         "debug": "~2.6.9",
         "dotenv": "^8.2.0",
         "express": "~4.16.1",
-        "express-rate-limit": "^5.2.3",
-        "helmet": "^4.4.1",
         "http-errors": "~1.6.3",
-        "jsonwebtoken": "^8.5.1",
-        "mongoose": "^5.10.13",
-        "morgan": "~1.9.1",
-        "node-cache": "^5.1.2",
-        "nodemailer": "^6.5.0",
+        "serverless-http": "^2.7.0",
+        "serverless-offline": "^8.0.0",
+        "short-uuid": "^4.2.0",
         "swagger-jsdoc": "^6.0.2",
         "swagger-ui-express": "^4.1.6",
+        "uuid": "^8.3.2",
         "yamljs": "^0.3.0"
     },
-    "devDependencies": {
-        "chai": "^4.3.4",
-        "chai-http": "^4.3.0",
-        "mocha": "^9.0.1"
-    }
+    "devDependencies": {}
 }
